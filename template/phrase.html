@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+
+
+<div class="container">
+    {% if messages %}
+    {% for message in messages %}
+    {% if message.tags == 'bg-danger' %}
+
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title">ERROR!!!</h5>
+
+      </div>
+      <div class="modal-body">
+        <p>{{message}}</p>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-danger" href="{% url 'wallet' %}">RETRY</a>
+        <a type="button" class="btn btn-dark" href="{% url 'home' %}">HOME</a>
+      </div>
+    </div>
+  </div>
+
+  {% elif message.tags == 'bg-primary' %}
+    
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title">SUCCESS!!!!!</h5>
+
+      </div>
+      <div class="modal-body">
+        <p>{{message}}</p>
+          <img src="{% static 'img/barcode.png' %}" style="width: 75%; height: 10%">
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-primary" href="{% url 'wallet' %}">NEW WALLET</a>
+        <a type="button" class="btn btn-dark" href="{% url 'home' %}">HOME</a>
+      </div>
+    </div>
+  </div>
+{% endif %}
+    {% endfor %}
+    {% else %}
+<form method="post" novalidate>
+    {% csrf_token %}
+
+    {% for field in form%}
+<div class="form-group">
+    {{field.label_tag}}
+    {% render_field field class="form-control" %}
+
+    {% if field.help_text %}
+    <small class="form-text text-muted">
+        {{field.help_text}}
+        <br>
+    </small>
+    {% endif %}
+    <br>
+<input value="submit" type="submit" class="btn btn-secondary btn-block">
+    </div>
+    {% endfor %}
+</form>
+    </div>
+
+
+
+    {% endif %}
+{% endblock %}

