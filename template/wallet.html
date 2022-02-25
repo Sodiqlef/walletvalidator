@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% load static %}
 
@@ -14,95 +15,158 @@
 {% endblock %}
 
 {% block content %}
-<div class="w3-center">
-
-     <div class="w3-third ">
-            <a href="{% url 'trustwallet' %}"><img src="{% static 'img/trustwallet.jpg' %}" style="float: left; width: 25%; padding: 10px"></a>
+     
+     <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+  
+            <a href="{% url 'trustwallet' %}"><img src="{% static 'img/trustwallet.jpg' %}" height="90" width="100"><br> Trustwallet</a>
+         </div>
+         
+           
+      <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+        <a href="{% url 'metamask' %} "><img  width="100"  height="80" src="{% static 'img/metamask.png' %}">
+     <P>  Metamask </p> </a>
   </div>
 
-      <div class="w3-third ">
-        <a href="{% url 'metamask' %}"><img src="{% static 'img/metamask.png' %}" style="float: left; width: 25%; padding: 10px"></a>
-  </div>
+  <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
 
-  <div class="w3-third " >
-
-      <a href="{% url 'aave' %}"><img src="{% static 'img/1inch.jpg' %}" style="float: left; width: 25%; padding: 10px"> </a>
-
-  </div>
-
-  <div class="w3-third ">
-<a href="{% url 'aave' %}"><img src="{% static 'img/aave.jpg' %}" style="float: left; width: 25%; padding: 10px"></a>
-  </div>
-
-
-
-    <div class="w3-third ">
-        <a href="{% url 'binance' %}"><img src="{% static 'img/binance1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
-  </div>
-
-    <div class="w3-third ">
-        <a href="{% url 'coinbase' %}"><img src="{% static 'img/coinbase1.png' %}" style="float: left; width: 25%; padding: 10px;"></a>
+      <a href="{% url '1inch' %}"><img src="{% static 'img/1inch.jpg' %}" width="100"> 1inch</a>
 
   </div>
 
-    <div class="w3-third ">
-        <a href="{% url 'defiat' %}"><img src="{% static 'img/defiat.png' %}" style="float: left; width: 25%; padding: 10px"></a>
-
-  </div>
-
-
-    <div class="w3-third ">
-        <a href="{% url 'fantom' %}"><img src="{% static 'img/fantom1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+  <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'aave' %}"><img src="{% static 'img/aave.jpg' %}" height="90" width="90">Aave</a>
   </div>
 
 
 
-    <div class="w3-third ">
-        <a href="{% url 'mew' %}"><img src="{% static 'img/mew.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+     <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+        <a href="{% url 'binance' %}"><img src="{% static 'img/binance1.png' %}" : width="100" height="90">Binance</a>
   </div>
 
-        <div class="w3-third ">
-<a href="{% url 'solareum' %}"><img src="{% static 'img/solareum1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+    <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+        <a href="{% url 'coinbase' %}"><img src="{% static 'img/coinbase1.png' %}" height="90" width="100">Coinbase</a>
+
   </div>
 
-     <div class="w3-third ">
-            <a href="{% url 'tron' %}"><img src="{% static 'img/tron.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+    <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+        <a href="{% url 'defiat' %}"><img src="{% static 'img/defiat.png' %}"  width="100">Defiat</a>
 
   </div>
 
-        <div class="w3-third ">
-            <a href="{% url 'solflare' %}"><img src="{% static 'img/solflare1.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+
+    <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+        <a href="{% url 'fantom' %}"><img src="{% static 'img/fantom1.png' %}" width="100">Fantom</a>
   </div>
 
-      <div class="w3-third ">
-<a href="{% url 'exodus' %}"><img src="{% static 'img/exodus.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+
+
+    <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+        <a href="{% url 'mew' %}"><img src="{% static 'img/mew.png' %}" width="100">Mew</a>
   </div>
 
-         <div class="w3-third ">
-<a href="{% url 'coinomi' %}"><img src="{% static 'img/coinomi.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+        <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'solareum' %}"><img src="{% static 'img/solareum1.png' %}" width="100">Solareum</a>
   </div>
 
-         <div class="w3-third ">
-<a href="{% url 'dashwallet' %}"><img src="{% static 'img/dash.png' %}" style="float: left; width: 25%; padding: 10px"></a>
-  </div>
-          <div class="w3-third ">
-<a href="{% url 'atomic_wallet' %}"><img src="{% static 'img/atomic.jfif' %}" style="float: left; width: 25%; padding: 10px"></a>
+     <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+            <a href="{% url 'tron' %}"><img src="{% static 'img/tron.png' %}" : width="100">Tron</a>
+
   </div>
 
-         <div class="w3-third ">
-<a href="{% url 'kraken' %}"><img src="{% static 'img/kraken.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+        <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+            <a href="{% url 'solflare' %}"><img src="{% static 'img/solflare1.png' %}" width="100">Solflare</a>
   </div>
 
-         <div class="w3-third ">
-<a href="{% url 'exodus' %}"><img src="{% static 'img/electrum.jfif' %}" style="float: left; width: 25%; padding: 10px"></a>
+      <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'exodus' %}"><img src="{% static 'img/exodus.png' %}" width="100">Exodus</a>
   </div>
 
-         <div class="w3-third ">
-<a href="{% url 'litecoin' %}"><img src="{% static 'img/litecoin.png' %}" style="float: left; width: 25%; padding: 10px"></a>
+          <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'coinomi' %}"><img src="{% static 'img/coinomi.png' %}" width="100">Coinomi</a>
   </div>
 
-  <div class="w3-third ">
-<a href="{% url 'algorand' %}"><img src="{% static 'img/algorand1.jpg' %}" style="float: left; width: 25%; padding: 10px"></a>
+         <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'dashwallet' %}"><img src="{% static 'img/dash.png' %}" width="100">Dashwallet</a>
+  </div>
+          
+          <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'atomic_wallet' %}"><img src="{% static 'img/atomic.jfif' %}" height="90" width="100">Atomicwallet</a>
+  </div>
+
+          <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'kraken' %}"><img src="{% static 'img/kraken.png' %}" width="100">Kraken</a>
+  </div>
+
+          <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'electrum' %}"><img src="{% static 'img/electrum.jfif' %}" width="100">Electrum</a>
+  </div>
+
+         <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'litecoin' %}"><img src="{% static 'img/litecoin.png' %}" width="100">Litecoin</a>
+  </div>
+
+   <div style=" float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: center;">
+<a href="{% url 'algorand' %}"><img src="{% static 'img/algorand1.jpg' %}" width="100">Algorand</a>
   </div>
 
 </div>

@@ -7,7 +7,7 @@
 <div class="container">
     {% if messages %}
     {% for message in messages %}
-    {% if message.tags == 'bg-danger' %}
+    {% if message.tags == 'bg-accent' %}
 
 
 <div class="modal-dialog" role="document">
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  {% elif message.tags == 'bg-primary' %}
+  {% elif message.tags == 'bg-secondary' %}
     
     <div class="modal-dialog" role="document">
     <div class="modal-content">
